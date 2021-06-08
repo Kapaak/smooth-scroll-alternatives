@@ -1,22 +1,26 @@
-import React, { useEffect, useRef } from "react";
-import { Section, Button } from "../../styles/GlobalStyles";
+import { useEffect, useRef } from "react";
 import smoothscroll from "smoothscroll-polyfill";
+//styles
+import { Section, Button } from "../../styles/GlobalStyles";
+
 const index = () => {
 	useEffect(() => smoothscroll.polyfill());
-	console.log("polyfilled2");
+
 	const firstRef = useRef(null);
 	const secondRef = useRef(null);
+
 	const smoothScroll = targetRef => {
-		console.log(targetRef.current);
 		targetRef.current.scrollIntoView({ behavior: "smooth" });
 	};
+
 	return (
 		<div>
 			<br />
 			<h1>Polyfill smooth scroll</h1>
 			<p>
-				This is the basic version of smooth scroll,it uses href tags with ids.
-				Not working in Safari and IE, but its very easy to implement.
+				This is an advanced version of smooth scroll,it uses JS method
+				scrollIntoView + polyfill. Working in Safari and IE, very easy to
+				implement.
 			</p>
 
 			<Button onClick={() => smoothScroll(firstRef)}>
