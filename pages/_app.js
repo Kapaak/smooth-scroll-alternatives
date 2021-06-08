@@ -4,6 +4,7 @@ import smoothscroll from "smoothscroll-polyfill";
 
 function MyApp({ Component, pageProps }) {
 	smoothscroll.polyfill();
+	console.log("polyfilled");
 
 	return (
 		<>
