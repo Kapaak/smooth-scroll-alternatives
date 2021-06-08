@@ -18,7 +18,9 @@ const index = () => {
 				</ScrollLink>
 			</Button>
 			<Button>
-				<ScrollLink to="second-basic">scroll second</ScrollLink>
+				<ScrollLink to="second-basic" smooth={true}>
+					scroll second
+				</ScrollLink>
 			</Button>
 			<br />
 			<br />
