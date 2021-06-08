@@ -1,6 +1,8 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Section, Button } from "../../styles/GlobalStyles";
 const index = () => {
+	useEffect(() => smoothscroll.polyfill());
+	console.log("polyfilled2");
 	const firstRef = useRef(null);
 	const secondRef = useRef(null);
 	const smoothScroll = targetRef => {
