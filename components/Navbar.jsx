@@ -35,6 +35,7 @@ const Nav = styled.nav`
 `;
 const NavLinks = styled.ul`
 	display: flex;
+	justify-content: center;
 	list-style: none;
 	max-width: 144rem;
 	margin: auto;
@@ -45,6 +46,7 @@ const NavLink = styled.li`
 		text-decoration: none;
 		color: var(--first-col);
 		transition: all 0.3s ease;
+		font-size: 1.9rem;
 
 		&:hover {
 			color: var(--third-col);
